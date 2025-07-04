@@ -1,0 +1,303 @@
+/* Responsive and hamburger menu styles for Keefer Webpage */
+
+@media (max-width:1300px){
+    .first-p-sec5 p {
+        font-size: 28px;
+    }
+    .sec5-content{
+        gap: 20px;
+    }
+    .card-p2{
+        white-space: nowrap;
+    }
+    .first-part-btn2 {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width:1200px){
+    .first-p-sec4 p{
+        font-size: 28px;
+    }
+    .card-p1{
+        font-size: 20px;
+    }
+}
+@media (max-width:1175px){
+    .form-img img{
+        height: 39px;
+    }
+    .first-part-btn2 {
+        padding: 6px 22px;
+        white-space: nowrap;
+    }
+    .first-part-btn3 {
+        padding: 6px 22px;
+        white-space: nowrap;
+    }
+}
+@media (max-width:1095px){
+    .logo-img img{
+        width: 100%;
+        height: auto;
+    }
+    .sec1-text{
+        padding-top: 12px;
+    }
+}
+@media (max-width:1090px){
+    .form-img img{
+        height: 36px;
+    }
+}
+@media (max-width:1115px){
+    .sec3-content{
+        flex-direction: column;
+        align-items: center;    
+    }
+    .sec3-img{
+        width: 100%;
+    }
+    .sec3-img2{
+        width: 100%;
+    }
+    .form-flex5 {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
+@media (max-width:1030px){
+    .second-part-a{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .new-flex{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media (max-width:940px){
+    .sec4-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-p-sec5-1 p{
+        padding-top: 25px;
+    }
+    .sec4-first-part{
+        border-right: none;
+        padding-bottom: 50px;
+    }
+    .sec4-second-part{
+        border-right: none;
+    }
+    .p3-p1{
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    .text-part{
+        text-align: left;
+        padding-bottom: 50px;
+    }
+
+    .second-part-a {
+        padding-bottom: 50px;
+        border-bottom: none;
+    }
+    .first-p-sec4 p{
+        padding-bottom: 16px;
+    }
+    .candc{
+        max-width: 100%;
+        text-align: center;
+    }
+    .third-part-imgs{
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .p3-p3{
+        max-width: 100%;
+        text-align: center;
+    }
+    .p3-p2{
+        max-width: 100%;
+    }
+    .sec4-third-part {
+        padding-left: 0px;
+    }
+    .second-part-a{
+        flex-direction: row;
+        align-items:normal
+    }
+    .new-flex{
+        flex-direction: row;
+        align-items: normal;
+    }
+    .second-part-a{
+        justify-content: center;
+        padding-right: 0px;
+    }
+    .text-part {
+        padding-left: 0px;
+        max-width: 350px;
+    }
+    .second-part-b {
+        padding-right: 0px;
+    }
+    .new-flex{
+        justify-content: center;
+    }
+}
+@media (max-width:900px){
+    .card-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .sec5-content{
+        flex-direction: column;
+    }
+    .right-p1{
+        max-width: 100%;
+    }
+    .logo-large-div{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:875px){
+    .sec1-flex{
+        flex-direction: column;
+    }
+    .text-par{
+        display: flex;
+        justify-content: center;
+    }
+    .sec1-text{
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width:545px){
+    .form-flex1{
+        flex-direction: column;
+        text-align: center;
+    }
+    .form-p1{
+        padding-right: 0px;
+    }
+    .form-p2{
+        text-align: center;
+    }
+    .form-flex3{
+        flex-direction: column;
+    }
+    .typearea2{
+        margin-left: 15px;
+        margin-top: 27px;
+    }
+}
+
+/* HAMBURGER MENU & MOBILE NAVIGATION - IMPROVED VERSION */
+@media screen and (max-width: 675px) {
+    .hamburger-menu {
+        display: flex;
+        margin-left: 15px;
+        margin-top: 12px;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 2100;
+    }
+    .hamburger-menu span {
+        width: 32px;
+        height: 4px;
+        background: #fff;
+        border-radius: 3px;
+        transition: 0.3s;
+        display: block;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        width: 220px;
+        background: linear-gradient(to bottom, #901c18 60%, #5a0909 100%);
+        padding: 20px 0;
+        gap: 18px;
+        border-radius: 0 0 0 8px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+        z-index: 2000;
+        transition: all 0.3s ease;
+    }
+    .nav-list.active {
+        display: flex !important;
+    }
+    .nav-list li {
+        padding: 14px 28px;
+        font-size: 1.12em;
+        color: #fff;
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+    }
+    .nav-list li:last-child {
+        border-bottom: none;
+    }
+    .nav-list li:hover {
+        background: rgba(255,255,255,0.07);
+        color: #f6dada;
+    }
+    .nav-content {
+        display: flex;
+        justify-content: end;
+        padding-right: 38px;
+        padding-bottom: 20px;
+        position: relative; /* Ensure absolute nav-list is relative to nav-content */
+    }
+}
+@media (max-width: 700px) {
+    .header-contact-block {
+        align-items: center;      /* was flex-start */
+        text-align: center;       /* was left */
+        margin-right: 0;
+        margin-top: 12px;
+        min-width: 0;
+        width: 100%;
+    }
+    .header-contact-top-wrap {
+        align-items: center;      /* was flex-start */
+        width: 100%;
+    }
+    .header-contact-underline {
+        width: 100%;
+    }
+    .header-contact-number {
+        text-align: center;       /* was left */
+        width: 100%;
+        font-size: 25px;
+    }
+    .header-contact-top {
+        font-size: 18px;
+    }
+    .header-contact-sub {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 545px) {
+    .header-contact-number {
+        font-size: 17px;
+    }
+    .header-contact-top {
+        font-size: 14px;
+    }
+    .header-contact-block {
+        padding: 0 4px;
+    }
+}
